@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Anirudh Narsipur"
   avatar           : "official_photo.jpg"
-  bio              : "Sophmore at Brown University"
+  bio              : "Junior at Brown University"
   location         : "Providence, RI"
   employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : 
-  email            :
+  email            : anirudh_narsipur at brown.edu
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

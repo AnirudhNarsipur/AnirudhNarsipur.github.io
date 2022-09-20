@@ -21,6 +21,7 @@ My coursework at Brown includes :
 | CSCI1810 Computational Molecular Biology | Fall 2021 | 
 | CSCI1420 Machine Learning | Spring 2022 | 
 | CSCI2951O Prescriptive Analytics | Spring 2022 | 
+| CSCI1010 Theory of Computation | Fall 2022 | 
 
 ## Mathematics
 
@@ -40,8 +41,10 @@ My coursework at Brown includes :
 | Course      | Semester |
 | ----------- | ----------- |
 | BIOL0150A Techniques and Analyses using DNA-Based Biotechnology (Half Credit) | Summer 2021 |
-| BIOL0470 Genetics | Fall 2021 |
+| BIOL0470 Genetics (with lab) | Fall 2021 |
 | BIOL1222A Current Topics In Functional Genomics | Spring 2022 | 
+| CHEM 0360 Organic Chemistry 2 (with lab) | Fall 2022 |
+| BIOL1950 Independent Study (with Prof Fairbrother) | Fall 2022 | 
 
 
 
@@ -51,6 +54,7 @@ My coursework at Brown includes :
 | Course      | Semester |
 | ----------- | ----------- |
 | CLPS1341 Lexical Semantics | Spring 2021 | 
-| Historical Crime Fiction | Summer 2021 | 
-| Acting | Fall 2021 | 
-
+| GRMN0750F Historical Crime Fiction | Summer 2021 | 
+| TAPS230 Acting | Fall 2021 | 
+| PHIL1705 Epistemology | Fall 2022 | 
+ 
