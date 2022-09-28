@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I'm Anirudh Narsipur. I'm a junior at Brown University. While I'm officially declared as a Mathematics-Computer science major I'm deeply interested in Computational Biology.
+Hi, I'm Anirudh Narsipur. I'm a junior at Brown University. While I'm officially declared as a Mathematics-Computer Science major I'm deeply interested in Computational Biology.
 
 My academic interests lie in formal methods and the intersection of CS,Biology. 
 
