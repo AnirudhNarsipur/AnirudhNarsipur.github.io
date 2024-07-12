@@ -17,5 +17,4 @@ Outside of academia, I spent two summers interning at the [Automated Reasoning G
 
 I'm currently looking for full-time job opportunities starting in the summer of 2025.
 
-Feel free to send me an email! (You can find my email address on the left sidebar)
-
+You can reach me at anirudh_narsipur@brown.edu
