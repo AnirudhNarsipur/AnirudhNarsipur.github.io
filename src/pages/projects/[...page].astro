@@ -6,6 +6,7 @@ import Pagination from '../../components/Pagination.astro';
 import ProjectPreview from '../../components/ProjectPreview.astro';
 import siteConfig from '../../data/site-config';
 import { sortItemsByDateDesc } from '../../utils/data-utils';
+import { OperationCanceledException } from 'typescript';
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
     const projects = (await getCollection('projects')).sort(sortItemsByDateDesc);
@@ -16,6 +17,19 @@ type Props = { page: Page<CollectionEntry<'projects'>> };
 
 const { page } = Astro.props;
 const portfolio = page.data;
+let sortedPortfolio = [...portfolio].sort((a, b) => {
+  const aNumber = parseInt(a.slug.split('_')[0], 10);
+  const bNumber = parseInt(b.slug.split('_')[0], 10);
+  const ar = "3_weenix" ; 
+  const br = "1_aws" ; 
+  const arNumber = parseInt(ar.split('_')[0], 10);
+  const brNumber = parseInt(br.split('_')[0], 10);
+  const comp =  arNumber - brNumber;
+  // error to log result
+//    throw new Error(arNumber + " " + ar + " " + brNumber + " " + br + " " + comp);
+//   throw new Error(aNumber + " " + a.slug + " " + bNumber + " " + b.slug);
+  return aNumber - bNumber;
+});
 ---
 
 <BaseLayout
@@ -25,7 +39,8 @@ const portfolio = page.data;
     showHeader={false}
 >
     <h1 class="mb-12 text-2xl leading-tight font-serif italic sm:mb-16 sm:text-4xl">Projects</h1>
-    
-    {portfolio.map((project) => <ProjectPreview project={project} class="mb-10 sm:mb-12" />)}
+    This is a (partial) list of projects I've worked on. Work I've done in interships, ongoing research work and certain course projects are missing but I'm happy to talk about them!
+    <br><br>    
+    {sortedPortfolio.map((project) => <ProjectPreview project={project} class="mb-10 sm:mb-12" />)}
     <Pagination page={page} class="my-16 sm:my-24" />
 </BaseLayout>
