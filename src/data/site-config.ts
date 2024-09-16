@@ -35,6 +35,7 @@ export type SiteConfig = {
     subscribe?: Subscribe;
     postsPerPage?: number;
     projectsPerPage?: number;
+    projectLinks: Record<string, string>;
 };
 
 const siteConfig: SiteConfig = {
@@ -107,6 +108,15 @@ const siteConfig: SiteConfig = {
             href: 'https://twitter.com/'
         }
     ],
+    projectLinks: {
+      "1cdclrust" : "https://github.com/AnirudhNarsipur/RustSAT",   
+      "2declcheck" : "https://github.com/AnirudhNarsipur/Z3ConcentrationChecker",
+      "3vrp" : "https://github.com/AnirudhNarsipur/Vehicle_Routing_Problem",
+      "4proj1710" : "https://github.com/CS1710FinalProject/CS1710FinalProject",
+      "5motif" : "https://github.com/AnirudhNarsipur/Finding_Motifs",
+      "21_weenix": "/projects/21_weenix/",
+
+    },
     hero: {
         title: 'Anirudh Narsipur',
         text: `<p>Hi, I&#39;m Anirudh.</p>
@@ -117,7 +127,7 @@ const siteConfig: SiteConfig = {
 `,
         image: {
             src: '/about.jpeg',
-            alt: 'A person sitting at a desk in front of a computer'
+            alt: 'A picture of Anirudh smiling'
         },
         actions: [
             {
