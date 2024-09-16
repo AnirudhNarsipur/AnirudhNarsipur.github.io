@@ -1,33 +1,28 @@
 {
-  "name": "minimal-mistakes",
-  "version": "3.4.2",
-  "description": "Minimal Mistakes Jekyll theme npm build scripts",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/mmistakes/minimal-mistakes.git"
-  },
-  "keywords": [
-    "jekyll",
-    "theme",
-    "minimal"
-  ],
-  "author": "Michael Rose",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mmistakes/minimal-mistakes/issues"
-  },
-  "homepage": "https://mmistakes.github.io/minimal-mistakes/",
-  "engines": {
-    "node": ">= 0.10.0"
-  },
-  "devDependencies": {
-    "npm-run-all": "^1.7.0",
-    "onchange": "^2.2.0",
-    "uglify-js": "^2.6.1"
-  },
-  "scripts": {
-    "uglify": "uglifyjs assets/js/vendor/jquery/jquery-1.12.4.min.js assets/js/plugins/jquery.fitvids.js assets/js/plugins/jquery.greedy-navigation.js assets/js/plugins/jquery.magnific-popup.js assets/js/plugins/jquery.smooth-scroll.min.js assets/js/plugins/stickyfill.min.js assets/js/_main.js -c -m -o assets/js/main.min.js",
-    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
-    "build:js": "npm run uglify"
-  }
+    "name": "tender-transit",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro check && astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "dependencies": {
+        "@astrojs/mdx": "^3.1.5",
+        "@astrojs/rss": "^4.0.7",
+        "@astrojs/sitemap": "^3.1.6",
+        "@astrojs/tailwind": "^5.1.0",
+        "astro": "^4.15.4",
+        "marked": "^14.1.2",
+        "tailwindcss": "^3.4.11",
+        "@astrojs/check": "^0.9.3",
+        "typescript": "^5.6.2"
+    },
+    "devDependencies": {
+        "@tailwindcss/typography": "^0.5.15",
+        "prettier": "^3.3.3",
+        "prettier-plugin-tailwindcss": "^0.6.6"
+    }
 }
