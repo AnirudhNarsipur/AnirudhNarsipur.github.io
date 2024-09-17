@@ -1,5 +1,5 @@
 ---
-title: 'Application Ranking (Android/Java + Python)'
-description: A CDCL solver written in RUST that also implements random restarts, clause deletion and two watched literals
+title: 'Application Ranking (Python)'
+description: "Use word embeddings to rank job-applicant fit"
 publishDate: 'Sept 16 2024'
 ---
