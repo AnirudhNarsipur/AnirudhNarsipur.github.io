@@ -95,27 +95,21 @@ const siteConfig: SiteConfig = {
         }
     ],
     socialLinks: [
-        {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
-        },
-        {
-            text: 'Instagram',
-            href: 'https://instagram.com/'
-        },
-        {
-            text: 'GitHub',
-            href: 'https://twitter.com/'
-        }
     ],
     projectLinks: {
-      "1cdclrust" : "https://github.com/AnirudhNarsipur/RustSAT",   
-      "2declcheck" : "https://github.com/AnirudhNarsipur/Z3ConcentrationChecker",
-      "3vrp" : "https://github.com/AnirudhNarsipur/Vehicle_Routing_Problem",
-      "4proj1710" : "https://github.com/CS1710FinalProject/CS1710FinalProject",
-      "5motif" : "https://github.com/AnirudhNarsipur/Finding_Motifs",
-      "21_weenix": "/projects/21_weenix/",
-
+      "1_aws" : "/projects/1_aws",   
+      "2_ta" : "/projects/2_ta",
+      "3_weenix" : "/projects/3_weenix",
+      "4_cdclrust" : "https://github.com/AnirudhNarsipur/RustSAT",
+      "5_vrp" : "https://github.com/AnirudhNarsipur/Vehicle_Routing_Problem",
+      "6_declcheck" : "https://github.com/AnirudhNarsipur/Z3ConcentrationChecker",
+      "8_1710" : "https://github.com/CS1710FinalProject/CS1710FinalProject",
+      "9_motif" : "https://github.com/AnirudhNarsipur/Finding_Motifs",
+      "10_ntru": "https://github.com/AnirudhNarsipur/NTRU",
+      "11_falldetect":"https://github.com/AnirudhNarsipur/FallDetectorApp",
+      "12_appranking" : "https://github.com/AnirudhNarsipur/Applicant_Ranking",
+      "13_pivot" :"https://github.com/PivotClass/Pivot",
+      "14_transliterate":"https://github.com/AnirudhNarsipur/Transliterate",
     },
     hero: {
         title: 'Anirudh Narsipur',
@@ -142,7 +136,7 @@ const siteConfig: SiteConfig = {
         formUrl: '#'
     },
     postsPerPage: 8,
-    projectsPerPage: 8
+    projectsPerPage: 10
 };
 
 export default siteConfig;

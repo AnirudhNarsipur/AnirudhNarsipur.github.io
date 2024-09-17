@@ -1,5 +1,5 @@
 ---
 title: 'Fall Detect (Android/Java + Python)'
-description: "A CDCL solver written in RUST that also implements random restarts, clause deletion and two watched literals"
+description: "An Android application using a Tensorflow LSTM model. Before Apple did it."
 publishDate: 'Sept 16 2024'
 ---

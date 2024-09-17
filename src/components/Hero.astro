@@ -6,28 +6,43 @@ import siteConfig from '../data/site-config';
 const hero = siteConfig.hero;
 ---
 
+<style>
+  .hero-content img {
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    max-width: 40%;
+  }
+
+  @media (max-width: 640px) {
+    .hero-content img {
+      float: none;
+      margin-left: 0;
+      max-width: 100%;
+    }
+  }
+</style>
+
 {
     (hero?.title || hero?.image?.src || hero?.text || (hero?.actions && hero.actions.length > 0)) && (
-        <section class="w-full flex flex-col gap-8 mb-16 sm:mb-24">
-            <div class="flex flex-col sm:flex-row sm:items-start sm:gap-8">
-                <div class="flex-1">
-                    {hero.title && <h1 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight mb-4">{hero.title}</h1>}
-                    {hero.text && <div class="max-w-none prose prose-dante sm:prose-lg" set:html={marked.parse(hero.text)} />}
-                    {/* {hero.actions && hero.actions.length > 0 && (
-                        <div class="flex flex-wrap gap-4 mt-4">
-                            {hero.actions.map((action) => (
-                                <Button href={action.href}>{action.text}</Button>
-                            ))}
-                        </div>
-                    )} */}
-                </div>
+        <section class="w-full mb-16 sm:mb-24">
+            <div class="hero-content">
+                {hero.title && <h1 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight mb-4">{hero.title}</h1>}
                 {hero.image?.src && (
-                    <figure class="sm:w-1/3 sm:flex-shrink-0 mt-4 sm:mt-0">
-                        <img src={hero.image.src} loading="lazy" decoding="async" alt={hero.image.alt || ''} class="w-full" />
+                    <figure>
+                        <img src={hero.image.src} loading="lazy" decoding="async" alt={hero.image.alt || ''} />
                         {hero.image.caption && <figcaption class="mt-1.5 text-xs sm:text-sm">{hero.image.caption}</figcaption>}
                     </figure>
                 )}
+                {hero.text && <div class="max-w-none text-justify prose prose-dante sm:prose-lg" set:html={marked.parse(hero.text)} />}
             </div>
+            {/* {hero.actions && hero.actions.length > 0 && (
+                <div class="flex flex-wrap gap-4 mt-4">
+                    {hero.actions.map((action) => (
+                        <Button href={action.href}>{action.text}</Button>
+                    ))}
+                </div>
+            )} */}
         </section>
     )
 }
