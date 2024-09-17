@@ -1,6 +1,6 @@
 ---
 title: 'Weenix (C)'
-description: A bare bones fully functional operating system
+description: I implemented a fully functional operating system that implements threads, processes,device drivers, a file system and virtual memory.
 publishDate: 'Sept 16 2024'
 ---
 
