@@ -66,7 +66,7 @@ const siteConfig: SiteConfig = {
         {
             text: 'LinkedIn',
             href: 'https://www.linkedin.com/in/anirudh-narsipur/',
-        }
+        },
         {
             text: 'Resume',
             href: 'AnirudhNarsipurResume.pdf'
