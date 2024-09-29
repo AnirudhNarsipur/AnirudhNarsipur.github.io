@@ -1,5 +1,5 @@
 ---
-title: 'AWS Automated Reasoning Internship(Java, Python, Lean)'
+title: 'AWS Automated Reasoning Internship (Java, Python, Lean)'
 description: "I spent two summers at AWS building services to deliver software verifications tools at scale."
 publishDate: 'Sept 15 2024'
 ---
