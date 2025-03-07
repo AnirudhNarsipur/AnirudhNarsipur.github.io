@@ -42,10 +42,6 @@ const siteConfig: SiteConfig = {
     title: 'Anirudh Narsipur',
     // subtitle: 'Minimal Astro.js theme',
     description: "Anirudh Narsipur's personal website",
-    image: {
-        src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
-    },
     headerNavLinks: [
         {
             text: 'Home',
