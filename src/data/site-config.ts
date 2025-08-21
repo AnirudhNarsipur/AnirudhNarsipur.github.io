@@ -65,7 +65,7 @@ const siteConfig: SiteConfig = {
         },
         {
             text: 'Resume',
-            href: 'AnirudhNarsipurResume.pdf'
+            href: '/AnirudhNarsipurResume.pdf'
         }
         // {
         //     text: 'Blog',
