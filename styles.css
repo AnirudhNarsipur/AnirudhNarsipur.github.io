@@ -1,0 +1,118 @@
+/* Base styles and CSS variables */
+:root {
+    --color-bg: #f5f0e8;
+    --color-text: #3d3d3d;
+    --color-text-muted: #6b6b6b;
+    --color-accent: #8b7355;
+    --color-accent-hover: #6d5a45;
+    --font-main: 'Source Serif 4', Georgia, serif;
+    --max-width: 800px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--color-accent-hover);
+}
+
+/* Navigation */
+.navbar {
+    padding: 1.5rem 0;
+}
+
+.nav-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--color-text);
+    font-size: 1.15rem;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+}
+
+/* Main container */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem 2rem 4rem;
+}
+
+/* Hero section with floating image */
+.hero-image {
+    float: right;
+    width: 180px;
+    height: auto;
+    margin: 0 0 1rem 2rem;
+    border-radius: 4px;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+}
+
+.bio p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.bio p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+    .hero-image {
+        float: none;
+        display: block;
+        width: 150px;
+        margin: 0 auto 2rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .nav-container {
+        gap: 1.5rem;
+    }
+
+    .container {
+        padding: 1.5rem 1.5rem 3rem;
+    }
+}
